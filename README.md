@@ -22,14 +22,14 @@
 
 ## Introduction
 
-[Ecollection](https://github.com/LeuAlmeida/ecollection) is a fictitious logistic company and this repository belong to the business logic and is the basis of a general structure.
+[Ecollection](https://github.com/LeuAlmeida/ecollection) is a fictitious company and this repository belong to the business logic and is the basis of a general structure.
 
 ## :electric_plug: Prerequisites
 
 - [Node.js LTS (>= 12.x)](https://nodejs.org/)
 - [Yarn (>= 1.21)](https://yarnpkg.com/) or [NPM (>= 6.9)](https://www.npmjs.com/)
 
-# :closed_lock_with_key: API Instructions
+## :closed_lock_with_key: API Instructions
 
 First get all the requirements installed on your system.
 
