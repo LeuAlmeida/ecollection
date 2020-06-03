@@ -56,13 +56,8 @@ Start the project
 $ yarn dev
 
 # Case the output appears like this, is all ok
-yarn run v1.19.1
-$ nodemon src/server.js
-[nodemon] 2.0.2
-[nodemon] to restart at any time, enter `rs`
-[nodemon] watching dir(s): *.*
-[nodemon] watching extensions: js,mjs,json
-[nodemon] starting `node -r sucrase/register src/server.js`
+yarn run v1.21.1
+$ ts-node-dev src/server.ts
 
 # The backend will run on port 3333
 # https://localhost:3333
