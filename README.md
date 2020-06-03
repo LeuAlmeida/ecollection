@@ -1,6 +1,6 @@
-<!-- p align="center">
-<img alt="Ecollection" src="./logo.png" />
-</p -->
+<p align="center">
+<img alt="Ecollection" src="./presentation.jpg" />
+</p>
 
 <h1 align="center">A technological and effective method for waste collection</h1>
 
