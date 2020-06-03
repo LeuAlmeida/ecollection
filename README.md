@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="Ecollection" src="./presentation.jpg" />
+<img alt="Ecollection" width="100%" src="./presentation.jpg" />
 </p>
 
 <h1 align="center">A technological and effective method for waste collection</h1>
