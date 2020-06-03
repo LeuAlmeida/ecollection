@@ -5,7 +5,7 @@
 <h1 align="center">A technological and effective method for waste collection</h1>
 
 <blockquote align="center">
-♻️ A full stack application developed at Next Level Week promoted by [Rocketseat](http://github.com/rocketseat)
+♻️ A full stack application developed at Next Level Week promoted by <a href="http://github.com/rocketseat">Rocketseat</a>
 </blockquote>
 
 <p align="center">
