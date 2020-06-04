@@ -1,6 +1,6 @@
-<!-- p align="center">
-<img alt="Ecollection" src="./logo.png" />
-</p -->
+<p align="center">
+<img alt="Ecollection" width="100%" src="./presentation.jpg" />
+</p>
 
 <h1 align="center">A technological and effective method for waste collection</h1>
 
@@ -111,3 +111,9 @@ See [LICENSE](LICENSE) for details.
 <h3 align="center">
 <a href="http://linkedin.com/in/leonardoalmeida99">Connect me in LinkedIn</a> | <a href="http://behance.net/almeida99">See my Behance</a> | <a href="https://leunardo.dev">Click here to go to my CV</a>
 </h3>
+
+<hr />
+
+<p align="center">
+<img alt="Your contribution are welcome :)" width="100%" src="./footer.png" />
+</p>
