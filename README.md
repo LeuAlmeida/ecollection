@@ -115,5 +115,5 @@ See [LICENSE](LICENSE) for details.
 <hr />
 
 <p align="center">
-<img alt="Your contribution are welcome :)" width="100%" src="./contribution.png" />
+<img alt="Your contribution are welcome :)" width="100%" src="./footer.png" />
 </p>
