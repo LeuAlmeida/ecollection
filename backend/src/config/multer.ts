@@ -1,6 +1,7 @@
 import multer from "multer";
 import path from "path";
 import crypto from "crypto";
+import removeAccents from "../utils/removeAccents";
 
 export default {
   storage: multer.diskStorage({
@@ -8,7 +9,9 @@ export default {
     filename(request, file, callback) {
       const hash = crypto.randomBytes(6).toString("hex");
 
-      const fileName = `${hash}-${file.originalname}`;
+      const fileName = `${hash}-${removeAccents(
+        file.originalname
+      )}`;
 
       callback(null, fileName);
     },
