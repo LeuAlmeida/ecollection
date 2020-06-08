@@ -7,7 +7,8 @@
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "NODE_ENV=production node dist/server.js"
   },
   "dependencies": {
     "celebrate": "^12.1.1",
