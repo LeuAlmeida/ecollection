@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Feather as Icon } from "@expo/vector-icons";
 import { Image, View, ImageBackground, Text, StyleSheet } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import RNPickerSelect from "react-native-picker-select";
 import axios from "axios";
 
@@ -26,10 +26,12 @@ const Home = () => {
   const [selectedUf, setSelectedUf] = useState("0");
   const [selectedCity, setSelectedCity] = useState("0");
 
+  const navigation = useNavigation();
+
   useEffect(() => {
     axios
       .get<IBGEUFResponse[]>(
-        "http://servicodados.ibge.gov.br/api/v1/localidades/estados"
+        "http://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome"
       )
       .then((response) => {
         const ufInitials = response.data.map((uf) => ({
@@ -58,10 +60,8 @@ const Home = () => {
       });
   }, [selectedUf]);
 
-  const navigation = useNavigation();
-
   function handleNavigateToPoints() {
-    navigation.navigate("Points", { selectedUf, selectedCity });
+    navigation.navigate("Points", { uf: selectedUf, city: selectedCity });
   }
 
   function handleSelectedUf(value: string) {
@@ -113,7 +113,7 @@ const Home = () => {
               <Icon name="arrow-right" color="#FFF" size={24} />
             </Text>
           </View>
-          <Text style={styles.buttonText}>Entrar</Text>
+          <Text style={styles.buttonText}>Log In</Text>
         </RectButton>
       </View>
     </ImageBackground>
