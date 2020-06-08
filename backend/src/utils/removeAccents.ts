@@ -1,4 +1,4 @@
-export default function RemoveAccents(string: string | string[]) {
+export default function removeAccents(string: string | string[]) {
   var accents =
     "ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž";
   var accentsOut =
