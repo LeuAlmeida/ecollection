@@ -5,6 +5,9 @@ import { Map, TileLayer, Marker } from "react-leaflet";
 import { LeafletMouseEvent } from "leaflet";
 import axios from "axios";
 
+import Success from "../../components/Success";
+import Dropzone from "../../components/Dropzone";
+
 import api from "../../services/api";
 import "./styles.css";
 
@@ -47,6 +50,7 @@ const CreatePoint = () => {
     0,
     0,
   ]);
+  const [selectedFile, setSelectedFile] = useState<File>();
 
   const [successMessage, setSuccessMessage] = useState(false);
 
@@ -132,24 +136,28 @@ const CreatePoint = () => {
     const [latitude, longitude] = selectedPosition;
     const items = selectedItems;
 
-    const data = {
-      name,
-      email,
-      whatsapp,
-      uf,
-      city,
-      latitude,
-      longitude,
-      items,
-    };
+    const data = new FormData();
+
+    data.append("name", name);
+    data.append("email", email);
+    data.append("whatsapp", whatsapp);
+    data.append("uf", uf);
+    data.append("city", city);
+    data.append("latitude", String(latitude));
+    data.append("longitude", String(longitude));
+    data.append("items", items.join(","));
+
+    if (selectedFile) {
+      data.append("image", selectedFile);
+    }
 
     await api.post("points", data);
 
-    setSuccessMessage(true)
+    setSuccessMessage(true);
   }
 
   if (successMessage) {
-    return (<h1>Enviado!</h1>)
+    return <Success />;
   }
 
   return (
@@ -167,6 +175,8 @@ const CreatePoint = () => {
           Registration of
           <br /> the collection point
         </h1>
+
+        <Dropzone onFileUploaded={setSelectedFile} />
 
         <fieldset>
           <legend>
@@ -244,6 +254,7 @@ const CreatePoint = () => {
               <label htmlFor="city">City</label>
 
               <select
+                disabled={cities.length <= 0 ? true : false}
                 name="city"
                 id="city"
                 value={selectedCity}
