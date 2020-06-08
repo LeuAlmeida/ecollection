@@ -1,3 +1,14 @@
+import React from "react";
+import { Image, View, StyleSheet } from "react-native";
+
+const Home = () => {
+  return (
+    <View style={styles.container}>
+      <Image source={require("../../assets/logo.png")} />
+    </View>
+  );
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -6,22 +17,22 @@ const styles = StyleSheet.create({
 
   main: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
 
   title: {
-    color: '#322153',
+    color: "#322153",
     fontSize: 32,
-    fontFamily: 'Ubuntu_700Bold',
+    fontFamily: "Ubuntu_700Bold",
     maxWidth: 260,
     marginTop: 64,
   },
 
   description: {
-    color: '#6C6C80',
+    color: "#6C6C80",
     fontSize: 16,
     marginTop: 16,
-    fontFamily: 'Roboto_400Regular',
+    fontFamily: "Roboto_400Regular",
     maxWidth: 260,
     lineHeight: 24,
   },
@@ -32,7 +43,7 @@ const styles = StyleSheet.create({
 
   input: {
     height: 60,
-    backgroundColor: '#FFF',
+    backgroundColor: "#FFF",
     borderRadius: 10,
     marginBottom: 8,
     paddingHorizontal: 24,
@@ -40,29 +51,31 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    backgroundColor: '#34CB79',
+    backgroundColor: "#34CB79",
     height: 60,
-    flexDirection: 'row',
+    flexDirection: "row",
     borderRadius: 10,
-    overflow: 'hidden',
-    alignItems: 'center',
+    overflow: "hidden",
+    alignItems: "center",
     marginTop: 8,
   },
 
   buttonIcon: {
     height: 60,
     width: 60,
-    backgroundColor: 'rgba(0, 0, 0, 0.1)',
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   buttonText: {
     flex: 1,
-    justifyContent: 'center',
-    textAlign: 'center',
-    color: '#FFF',
-    fontFamily: 'Roboto_500Medium',
+    justifyContent: "center",
+    textAlign: "center",
+    color: "#FFF",
+    fontFamily: "Roboto_500Medium",
     fontSize: 16,
-  }
+  },
 });
+
+export default Home;
