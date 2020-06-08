@@ -63,10 +63,7 @@ $ ts-node-dev src/server.ts
 # https://localhost:3333
 ```
 
-<!--
-# :computer: Web Application instructions
-
-Make a clone from the repo and install the dependencies. (Certify yourself that the api is running)
+### :computer: Getting started the web application
 
 ```shell
 # After clone this repo, enter in the Web folder
@@ -77,28 +74,26 @@ $ yarn
 
 # Run the project
 $ yarn start
+
+# IMPORTANT!!!
+# Certify yourself that the backend is running on http://localhost:3333
 ```
--->
 
-<!--
-# :iphone: Mobile App instructions (Has not been tested on iOS)
-
-Make a clone from the repo and install the dependencies
+# :iphone: Getting started the mobile application (app)
 
 ```shell
-# After clone this repo, enter in the DevRadar folder
-$ cd fastfeet-app
+# After clone this repo, enter in the folder
+$ cd mobile
 
 # Install all dependencies using Yarn
 $ yarn
 
-# Run the react native metro bundle
-$ react-native start
+# Run using Expo
+$ yarn start
 
-# Run the project
-$ react-native run-android
+# Scan using your device and certify that you are using
+# the correct Base URL in the src/services/api.ts file
 ```
--->
 
 ## :copyright: License
 
