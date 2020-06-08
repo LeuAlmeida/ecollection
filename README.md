@@ -63,7 +63,9 @@ $ ts-node-dev src/server.ts
 # https://localhost:3333
 ```
 
-### :computer: Getting started the web application
+## :computer: Frontend Instructions
+
+### Getting started the web application
 
 ```shell
 # After clone this repo, enter in the Web folder
@@ -79,7 +81,9 @@ $ yarn start
 # Certify yourself that the backend is running on http://localhost:3333
 ```
 
-# :iphone: Getting started the mobile application (app)
+## :iphone: Mobile Instructions
+
+### Getting started the mobile application (app)
 
 ```shell
 # After clone this repo, enter in the folder
