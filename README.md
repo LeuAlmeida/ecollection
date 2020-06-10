@@ -25,7 +25,9 @@
 [Ecoleta](https://github.com/LeuAlmeida/ecoleta) is a fictitious company and this repository belong to the business logic and is the basis of a general structure.
 
 <p align="center">
-  <img src="./presentation-video.jpg" alt="Ecoleta Presentation">
+  <a href="https://www.linkedin.com/posts/leonardoalmeida99_frontend-backend-javascript-activity-6676495350372556800-3v9q">
+    <img src="./presentation-video.jpg" alt="Ecoleta Presentation">
+  </a>
 </p>
 
 ## :electric_plug: Prerequisites
