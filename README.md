@@ -1,5 +1,5 @@
 <p align="center">
-<img alt="Ecollection" width="100%" src="./presentation.jpg" />
+<img alt="Ecoleta" src="./web/src/assets/logo.svg" />
 </p>
 
 <h1 align="center">A technological and effective method for waste collection</h1>
@@ -9,20 +9,24 @@
 </blockquote>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/LeuAlmeida/ecollection?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/LeuAlmeida/ecoleta?color=%2304D361">
 
   <a href="https://leunardo.dev">
     <img alt="Made by Léu Almeida" src="https://img.shields.io/badge/made%20by-Léu%20Almeida-%2304D361">
   </a>
 </p>
 
-<!-- p align="center">
-<img alt="Ecollection Presentation" src="./presentation.jpg" />
-</p -->
+<p align="center">
+  <img src="./presentation.jpg" alt="Ecoleta Presentation">
+</p>
 
 ## Introduction
 
-[Ecollection](https://github.com/LeuAlmeida/ecollection) is a fictitious company and this repository belong to the business logic and is the basis of a general structure.
+[Ecoleta](https://github.com/LeuAlmeida/ecoleta) is a fictitious company and this repository belong to the business logic and is the basis of a general structure.
+
+<p align="center">
+  <img src="./presentation-video.jpg" alt="Ecoleta Presentation">
+</p>
 
 ## :electric_plug: Prerequisites
 
@@ -47,11 +51,7 @@ $ yarn
 
 # Run the migrations and seeds
 $ yarn knex:migrate && yarn knex:seed
-```
 
-Start the project
-
-```shell
 # Run the development server
 $ yarn dev
 
